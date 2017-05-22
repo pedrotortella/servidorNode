@@ -6,3 +6,9 @@ module.exports = function (app) {
         res.end();
     });
 };
+
+module.exports = function (app) {
+    app.get('/', function (req, res) {
+        res.render("home/index");
+    });
+};
